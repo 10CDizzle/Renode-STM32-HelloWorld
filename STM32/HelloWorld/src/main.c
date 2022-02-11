@@ -3,10 +3,9 @@
 
 void main(void)
 {
-    // Nothing Fancy, just print 'hello world' to the console every 500 ms.
+    // Nothing Fancy, just print 'hello world' to the console.
+    printf("Hello World! \r");
     for (;;)
     {
-        printf("Hello World! \r");
-        k_sleep(K_MSEC(500));
     }
 }

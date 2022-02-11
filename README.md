@@ -11,7 +11,7 @@
 
 4. Set up the machine to emulate. In the opened Renode terminal, type in:
     - `mach create` to instantinate a new simulation machine instance.
-    - `machine LoadPlatformDescription @platforms/boards/stm32f4_discovery-bb.repl` to load the target simulation architecture
+    - `machine LoadPlatformDescription @platforms/boards/stm32f4_discovery.repl` to load the target simulation architecture
     - `sysbus LoadELF <path to HelloWorld.elf located in /Binary>` to load the target code.
 
 5. In our case, the print statements will appear on Uart2, so we need to observe it by typing `showAnalyzer sysbus.uart2` in the machine terminal. Doing this should bring up another terminal.
